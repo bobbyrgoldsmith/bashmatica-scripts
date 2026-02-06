@@ -1,6 +1,6 @@
 # Bashmatica! Scripts
 
-Demo scripts and code samples from the [Bashmatica! newsletter](https://newsletter.nodebridge.dev), covering AI and automation in DevOps and QA.
+Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmatica.beehiiv.com), covering AI and automation in DevOps and QA.
 
 ## Contents
 
