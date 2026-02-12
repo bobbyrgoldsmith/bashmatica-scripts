@@ -1,0 +1,6 @@
+# Test files with example secrets (create your own locally)
+test-input.log
+test-*.log
+
+# Output files
+*.sanitized

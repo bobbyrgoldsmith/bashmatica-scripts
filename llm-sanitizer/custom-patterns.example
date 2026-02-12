@@ -1,0 +1,32 @@
+# Custom Patterns Example for llm-sanitizer
+# Add one regex pattern per line
+# Lines starting with # are comments
+#
+# Usage: ./sanitize.sh -c custom-patterns.example < logs.txt
+
+# Internal hostnames (adjust for your infrastructure)
+prod-[a-z]+-[0-9]+\.internal\.mycompany\.com
+staging-[a-z]+-[0-9]+\.internal
+dev-[a-z]+\.local
+
+# Internal service URLs
+https?://[a-z]+-service\.internal:[0-9]+
+
+# Custom application tokens
+MYAPP_TOKEN_[A-Za-z0-9]{32}
+INTERNAL_API_KEY_[A-Za-z0-9]{24}
+
+# Customer-specific identifiers (if you need to redact these)
+customer_id=[0-9]{8,12}
+account_number=[A-Z]{2}[0-9]{10}
+
+# Internal project codes
+project-[a-z]{3}-[0-9]{4}
+
+# Specific file paths that reveal infrastructure
+/opt/mycompany/[a-z]+/config
+/var/secrets/[a-z]+
+
+# Internal domain patterns
+[a-z]+\.corp\.mycompany\.com
+[a-z]+\.internal\.mycompany\.net

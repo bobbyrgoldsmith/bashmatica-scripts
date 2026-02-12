@@ -6,17 +6,18 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 
 | Directory | Description | Issue |
 |-----------|-------------|-------|
-| [webdriver-updater](./webdriver-updater/) | Browser-agnostic Selenium WebDriver auto-updater | [#1: The Hidden Maintenance Tax of Test Automation](https://newsletter.nodebridge.dev) |
+| [webdriver-updater](./webdriver-updater/) | Browser-agnostic Selenium WebDriver auto-updater | [#1: The Hidden Maintenance Tax of Test Automation](https://bashmatica.beehiiv.com/p/bashmatica-1-a-new-shift-on-an-old-problem) |
+| [llm-sanitizer](./llm-sanitizer/) | Strip secrets from logs before sending to LLMs | [#2: The Good, The Bad, & The Ugly of LLMs in the Pipeline](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
-Bashmatica! is a weekly newsletter for DevOps and QA engineers covering:
+Bashmatica! is a weekly newsletter for DevOps, QA, and Site Reliability engineers covering:
 
 - **Integration Strategies** - How to add AI and automation to pipelines without breaking production
 - **Honest Tool Assessments** - What works, what doesn't, and when to avoid entirely
 - **Case Studies** - What's hype vs. what's actually working
 
-Subscribe at [newsletter.nodebridge.dev](https://newsletter.nodebridge.dev).
+Subscribe at [bashmatica.beehiiv.com](https://bashmatica.beehiiv.com).
 
 ## Usage
 
@@ -39,4 +40,4 @@ MIT License. See [LICENSE](./LICENSE) for details.
 ## Author
 
 Bobby R. Goldsmith
-[Nodebridge Automation Solutions](https://nodebridge.dev)
+[NodeBridge Automation Solutions](https://nodebridge.dev)
