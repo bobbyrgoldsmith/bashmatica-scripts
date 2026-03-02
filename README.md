@@ -9,6 +9,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [webdriver-updater](./webdriver-updater/) | Browser-agnostic Selenium WebDriver auto-updater | [#1: The Hidden Maintenance Tax of Test Automation](https://bashmatica.beehiiv.com/p/bashmatica-1-a-new-shift-on-an-old-problem) |
 | [llm-sanitizer](./llm-sanitizer/) | Strip secrets from logs before sending to LLMs | [#2: The Good, The Bad, & The Ugly of LLMs in the Pipeline](https://bashmatica.beehiiv.com/#) |
 | [model-compare](./model-compare/) | Compare Claude model tier responses for log analysis | [#3: Not All LLMs Are Equal for DevOps Tasks](https://bashmatica.beehiiv.com/#) |
+| [jq-log-parser](./jq-log-parser/) | Structured JSON log parsing utilities with jq | [#4: When "AI-Native" Means "40% Fewer of You"](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
