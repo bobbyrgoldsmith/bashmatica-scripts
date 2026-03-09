@@ -10,6 +10,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [llm-sanitizer](./llm-sanitizer/) | Strip secrets from logs before sending to LLMs | [#2: The Good, The Bad, & The Ugly of LLMs in the Pipeline](https://bashmatica.beehiiv.com/#) |
 | [model-compare](./model-compare/) | Compare Claude model tier responses for log analysis | [#3: Not All LLMs Are Equal for DevOps Tasks](https://bashmatica.beehiiv.com/#) |
 | [jq-log-parser](./jq-log-parser/) | Structured JSON log parsing utilities with jq | [#4: When "AI-Native" Means "40% Fewer of You"](https://bashmatica.beehiiv.com/#) |
+| [ssl-check-renew](./ssl-check-renew/) | Auto-check SSL cert expiry & renew via certbot | [#5: LLMs Never Say "I Don't Know" (and That's the Problem)](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
