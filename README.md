@@ -12,6 +12,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [jq-log-parser](./jq-log-parser/) | Structured JSON log parsing utilities with jq | [#4: When "AI-Native" Means "40% Fewer of You"](https://bashmatica.beehiiv.com/#) |
 | [ssl-check-renew](./ssl-check-renew/) | Auto-check SSL cert expiry & renew via certbot | [#5: LLMs Never Say "I Don't Know" (and That's the Problem)](https://bashmatica.beehiiv.com/#) |
 | [blast-radius-guard](./blast-radius-guard/) | Pre-commit hook to catch destructive patterns in diffs | [#6: 6.3 Million Lost Orders and a 90-Day Reset](https://bashmatica.beehiiv.com/#) |
+| [test-integrity-lint](./test-integrity-lint/) | Scan test files for state injection and low assertion density | [#7: The Trust Decay Problem](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
