@@ -13,6 +13,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [ssl-check-renew](./ssl-check-renew/) | Auto-check SSL cert expiry & renew via certbot | [#5: LLMs Never Say "I Don't Know" (and That's the Problem)](https://bashmatica.beehiiv.com/#) |
 | [blast-radius-guard](./blast-radius-guard/) | Pre-commit hook to catch destructive patterns in diffs | [#6: 6.3 Million Lost Orders and a 90-Day Reset](https://bashmatica.beehiiv.com/#) |
 | [test-integrity-lint](./test-integrity-lint/) | Scan test files for state injection and low assertion density | [#7: The Trust Decay Problem](https://bashmatica.beehiiv.com/#) |
+| [assertion-density-check](./assertion-density-check/) | Flag test files that inflate coverage without meaningful assertions | [#8: When the Dashboard Says 94%](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
