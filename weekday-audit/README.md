@@ -2,7 +2,7 @@
 
 Scan text files for mismatches between day-of-week names and calendar dates. When LLMs generate reports, briefs, and documentation, they get the dates right and the day names wrong. This script catches it.
 
-From [Bashmatica! #10](https://bashmatica.beehiiv.com/#).
+From [Bashmatica! #11](https://bashmatica.beehiiv.com/#).
 
 ## The Problem
 

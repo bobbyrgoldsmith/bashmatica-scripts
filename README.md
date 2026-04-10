@@ -15,7 +15,8 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [test-integrity-lint](./test-integrity-lint/) | Scan test files for state injection and low assertion density | [#7: The Trust Decay Problem](https://bashmatica.beehiiv.com/#) |
 | [assertion-density-check](./assertion-density-check/) | Flag test files that inflate coverage without meaningful assertions | [#8: When the Dashboard Says 94%](https://bashmatica.beehiiv.com/#) |
 | [stale-test-finder](./stale-test-finder/) | Find test files that haven't kept pace with their source code | [#9: Q1's 52,000 Cuts Didn't Remove Headcount. They Removed the Feedback Loop.](https://bashmatica.beehiiv.com/#) |
-| [weekday-audit](./weekday-audit/) | Scan text files for day-of-week / date mismatches in LLM output | [#10](https://bashmatica.beehiiv.com/#) |
+| [mutant-check](./mutant-check/) | Lightweight mutation testing demo for any language and test runner | [#10: 15,000 Artificial Bugs. Facebook's Tests Caught Less Than Half.](https://bashmatica.beehiiv.com/#) |
+| [weekday-audit](./weekday-audit/) | Scan text files for day-of-week / date mismatches in LLM output | [#11](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
