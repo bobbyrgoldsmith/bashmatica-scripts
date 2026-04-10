@@ -14,6 +14,8 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [blast-radius-guard](./blast-radius-guard/) | Pre-commit hook to catch destructive patterns in diffs | [#6: 6.3 Million Lost Orders and a 90-Day Reset](https://bashmatica.beehiiv.com/#) |
 | [test-integrity-lint](./test-integrity-lint/) | Scan test files for state injection and low assertion density | [#7: The Trust Decay Problem](https://bashmatica.beehiiv.com/#) |
 | [assertion-density-check](./assertion-density-check/) | Flag test files that inflate coverage without meaningful assertions | [#8: When the Dashboard Says 94%](https://bashmatica.beehiiv.com/#) |
+| [stale-test-finder](./stale-test-finder/) | Find test files that haven't kept pace with their source code | [#9: Q1's 52,000 Cuts Didn't Remove Headcount. They Removed the Feedback Loop.](https://bashmatica.beehiiv.com/#) |
+| [weekday-audit](./weekday-audit/) | Scan text files for day-of-week / date mismatches in LLM output | [#10](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
