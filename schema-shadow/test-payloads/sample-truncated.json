@@ -1,0 +1,13 @@
+{
+  "vendor_name": "Acme Corp",
+  "invoice_number": "INV-2026-0045",
+  "total_amount": "1850.00",
+  "due_date": "2026-06-08",
+  "is_paid": "false",
+  "line_items": [
+    {"sku": "D-001", "qty": 2, "unit_price": 100.00},
+    {"sku": "D-002", "qty": 1, "unit_price": 50.00},
+    {"sku": "D-003", "qty": 3, "unit_price": 200.00},
+    {"sku": "D-004", "qty": 2, "unit_price": 75.00}
+  ]
+}

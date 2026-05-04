@@ -1,0 +1,19 @@
+{
+  "vendor_name": "Acme Corp",
+  "invoice_number": "INV-2026-0042",
+  "total_amount": 4321.55,
+  "due_date": "2026-06-04",
+  "is_paid": false,
+  "line_items": [
+    {"sku": "A-001", "qty": 2, "unit_price": 100.00},
+    {"sku": "A-002", "qty": 1, "unit_price": 50.00},
+    {"sku": "A-003", "qty": 5, "unit_price": 200.00},
+    {"sku": "A-004", "qty": 3, "unit_price": 75.00},
+    {"sku": "A-005", "qty": 4, "unit_price": 125.00},
+    {"sku": "A-006", "qty": 2, "unit_price": 300.00},
+    {"sku": "A-007", "qty": 1, "unit_price": 80.00},
+    {"sku": "A-008", "qty": 6, "unit_price": 45.00},
+    {"sku": "A-009", "qty": 2, "unit_price": 60.00},
+    {"sku": "A-010", "qty": 1, "unit_price": 90.00}
+  ]
+}

@@ -18,6 +18,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [mutant-check](./mutant-check/) | Lightweight mutation testing demo for any language and test runner | [#10: 15,000 Artificial Bugs. Facebook's Tests Caught Less Than Half.](https://bashmatica.beehiiv.com/#) |
 | [weekday-audit](./weekday-audit/) | Scan text files for day-of-week / date mismatches in LLM output | [#11](https://bashmatica.beehiiv.com/#) |
 | [unit-check](./unit-check/) | Validate LLM-emitted unit conversions against deterministic constants; flag inaccuracies and threshold-crossing errors | [#12](https://bashmatica.beehiiv.com/#) |
+| [schema-shadow](./schema-shadow/) | Audit LLM-emitted JSON payloads for failure modes JSON Schema can't catch: dropped fields, type coercion, array drift, field-order drift | [#13](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
