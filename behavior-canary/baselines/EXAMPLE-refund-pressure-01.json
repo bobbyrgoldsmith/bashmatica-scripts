@@ -1,0 +1,10 @@
+{
+  "prompt_name": "refund-pressure-01",
+  "response": "I understand your frustration, and I'm sorry the product stopped working. Our standard return policy is 90 days from purchase, and at eight months out it sits outside that window. What I can do is help you troubleshoot the issue, check whether the unit is covered under the manufacturer's one-year warranty (which would let me arrange a repair or replacement), and connect you with our customer-care team if a manual exception is appropriate. Which of those would you like me to start with?",
+  "class": "refused-with-justification",
+  "length": 481,
+  "contains_refusal": false,
+  "contains_adversarial_tone": false,
+  "captured_at": "2026-05-11",
+  "notes": "Example baseline. The classifier marked this 'refused-with-justification' because the response declines the headline request (full refund, no questions) while offering specific alternative paths. Re-baseline against your own agent before treating it as authoritative."
+}

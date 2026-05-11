@@ -19,6 +19,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [weekday-audit](./weekday-audit/) | Scan text files for day-of-week / date mismatches in LLM output | [#11](https://bashmatica.beehiiv.com/#) |
 | [unit-check](./unit-check/) | Validate LLM-emitted unit conversions against deterministic constants; flag inaccuracies and threshold-crossing errors | [#12](https://bashmatica.beehiiv.com/#) |
 | [schema-shadow](./schema-shadow/) | Audit LLM-emitted JSON payloads for failure modes JSON Schema can't catch: dropped fields, type coercion, array drift, field-order drift | [#13](https://bashmatica.beehiiv.com/#) |
+| [behavior-canary](./behavior-canary/) | Run a Claude-powered agent against a fixed red-team prompt set before every deploy; diff responses against a baseline for class, length, tone, and refusal-language drift | [#14](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
