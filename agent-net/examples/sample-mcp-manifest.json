@@ -1,0 +1,134 @@
+{
+  "tools": [
+    {
+      "name": "get_account_balance",
+      "description": "Read the current account balance for a given customer.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "list_invoices",
+      "description": "List invoices for a customer, optionally filtered by status.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string" },
+          "status": { "type": "string", "enum": ["draft", "sent", "paid", "void"] }
+        }
+      }
+    },
+    {
+      "name": "draft_invoice",
+      "description": "Create a draft invoice. The invoice is not sent until send_invoice is called.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string" },
+          "line_items": { "type": "array" }
+        }
+      }
+    },
+    {
+      "name": "update_customer_notes",
+      "description": "Update the internal notes field on a customer record.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "send_invoice",
+      "description": "Send an invoice to a customer via email. This action is irreversible from the recipient's perspective.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "invoice_id": { "type": "string" }
+        }
+      },
+      "requires_confirmation": true
+    },
+    {
+      "name": "post_to_instagram",
+      "description": "Publish a post to the connected Instagram business account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "caption": { "type": "string" },
+          "media_url": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "schedule_meeting",
+      "description": "Create a calendar invite and send it to attendees.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "attendees": { "type": "array" },
+          "start_time": { "type": "string" },
+          "duration_minutes": { "type": "integer" }
+        }
+      }
+    },
+    {
+      "name": "wire_payment",
+      "description": "Wire a payment to a vendor via ACH. Funds enter the clearing window immediately.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "vendor_id": { "type": "string" },
+          "amount_cents": { "type": "integer" }
+        }
+      },
+      "requires_confirmation": true
+    },
+    {
+      "name": "send_docusign_envelope",
+      "description": "Send a contract via DocuSign for counterparty signature.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "template_id": { "type": "string" },
+          "recipient_email": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "refund_payment",
+      "description": "Issue a refund against a previously captured payment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "payment_id": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "cancel_subscription",
+      "description": "Cancel a customer's active subscription. Customer will retain access until period end.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "subscription_id": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "search_knowledge_base",
+      "description": "Search internal knowledge base articles for keyword matches.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" }
+        }
+      }
+    }
+  ]
+}
