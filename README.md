@@ -20,6 +20,8 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [unit-check](./unit-check/) | Validate LLM-emitted unit conversions against deterministic constants; flag inaccuracies and threshold-crossing errors | [#12](https://bashmatica.beehiiv.com/#) |
 | [schema-shadow](./schema-shadow/) | Audit LLM-emitted JSON payloads for failure modes JSON Schema can't catch: dropped fields, type coercion, array drift, field-order drift | [#13](https://bashmatica.beehiiv.com/#) |
 | [behavior-canary](./behavior-canary/) | Run a Claude-powered agent against a fixed red-team prompt set before every deploy; diff responses against a baseline for class, length, tone, and refusal-language drift | [#14](https://bashmatica.beehiiv.com/#) |
+| [agent-net](./agent-net/) | Classify an agent's tool manifest by reversibility tier (read-only / reversible-write / irreversible-action / privileged-blast-radius) before deploy | [#15](https://bashmatica.beehiiv.com/#) |
+| [receipt-check](./receipt-check/) | Tier the supporting evidence for an AI procurement claim (vendor demo → our pilot) and gate irreversible decisions against the evidence quality | [#16](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 

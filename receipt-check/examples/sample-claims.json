@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "claim": "47% faster ticket triage with Acme Triage AI",
+      "vendor": "Acme Triage AI",
+      "source_url": "https://acmeai.com/demos/triage-automation",
+      "source_type": "vendor_demo",
+      "sample_size": null,
+      "timeframe_weeks": null,
+      "deployment_scale": null,
+      "regression_rate": null,
+      "our_deployment_scale": "support org of 2400",
+      "decision_reversibility": "irreversible",
+      "decision_description": "headcount reduction in tier-1 support (200 roles)"
+    },
+    {
+      "claim": "62% reduction in legal contract review time",
+      "vendor": "LegalSift",
+      "source_url": "https://legalsift.com/case-studies/global-bank-q3",
+      "source_type": "vendor_case_study",
+      "sample_size": 31,
+      "timeframe_weeks": 6,
+      "deployment_scale": "one paralegal team",
+      "regression_rate": "not disclosed",
+      "our_deployment_scale": "legal ops of 180",
+      "decision_reversibility": "irreversible",
+      "decision_description": "elimination of paralegal review tier"
+    },
+    {
+      "claim": "30% inventory-cost reduction with vendor-claimed forecasting accuracy",
+      "vendor": "ForecastIQ",
+      "source_url": "https://retailtech-review.com/forecastiq-independent-trial",
+      "source_type": "independent_study",
+      "sample_size": 14,
+      "timeframe_weeks": 12,
+      "deployment_scale": "14 mid-size grocery stores",
+      "regression_rate": "8% of SKUs over-ordered",
+      "our_deployment_scale": "11 cafes (single-region pilot)",
+      "decision_reversibility": "semi_reversible",
+      "decision_description": "swap-in for existing forecasting vendor"
+    },
+    {
+      "claim": "Internal pilot: 18% MTTR reduction in incident response with on-call copilot",
+      "vendor": "Internal (Anthropic Claude + custom tooling)",
+      "source_url": "https://internal-wiki.example.com/oncall-copilot-pilot",
+      "source_type": "our_pilot",
+      "sample_size": 142,
+      "timeframe_weeks": 10,
+      "deployment_scale": "single on-call team (8 engineers)",
+      "regression_rate": "0% missed pages, 2% escalation regressions",
+      "our_deployment_scale": "platform org of 110",
+      "decision_reversibility": "reversible",
+      "decision_description": "expand pilot to all platform on-call rotations"
+    },
+    {
+      "claim": "Marketing CMS migration to AI-authored draft pipeline",
+      "vendor": "ContentForge",
+      "source_url": "https://contentforge.com/sales",
+      "source_type": "vendor_demo",
+      "decision_reversibility": "reversible",
+      "decision_description": "test the pipeline on Q3 blog content"
+    }
+  ]
+}
