@@ -22,6 +22,8 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [behavior-canary](./behavior-canary/) | Run a Claude-powered agent against a fixed red-team prompt set before every deploy; diff responses against a baseline for class, length, tone, and refusal-language drift | [#14](https://bashmatica.beehiiv.com/#) |
 | [agent-net](./agent-net/) | Classify an agent's tool manifest by reversibility tier (read-only / reversible-write / irreversible-action / privileged-blast-radius) before deploy | [#15](https://bashmatica.beehiiv.com/#) |
 | [receipt-check](./receipt-check/) | Tier the supporting evidence for an AI procurement claim (vendor demo → our pilot) and gate irreversible decisions against the evidence quality | [#16](https://bashmatica.beehiiv.com/#) |
+| [env-drift](./env-drift/) | Compare an expected-key manifest against the actual environment and flag MISSING / EMPTY / EXTRA keys before an app boots into a silent failure | [#17](https://bashmatica.beehiiv.com/#) |
+| [gate-keeper](./gate-keeper/) | Refuse to ratify an agent-generated test as a passing gate until it clears an assertion-density floor, a state-manipulation scan, and an independent double-replay | [#18](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 
