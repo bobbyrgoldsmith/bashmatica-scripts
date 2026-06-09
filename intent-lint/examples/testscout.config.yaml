@@ -1,0 +1,66 @@
+# Sample testscout.config.yaml — deliberately incomplete and out of sync, so
+# intent-lint demonstrates every refusal end to end.
+#
+# Seeded faults:
+#   - login         : clean (intent + criticality + a page with fallbacks)
+#   - checkout      : missing intent
+#   - profile       : missing criticality
+#   - search        : pages_involved -> a page whose elements have NO fallbacks
+#   - legacy_flow   : file: points at a spec that was deleted (ORPHAN-CFG)
+#   - tests/cart.spec.ts on disk has no entry here at all (ORPHAN-DISK)
+
+project:
+  name: demo-shop
+  framework: playwright
+  language: typescript
+  test_dir: ./tests
+
+pages:
+  login:
+    url: /login
+    elements:
+      email_input:
+        primary: "[data-testid=login-email]"
+        fallbacks:
+          - "input[type=email]"
+          - "getByLabel('Email')"
+      submit_button:
+        primary: "[data-testid=login-submit]"
+        fallbacks:
+          - "getByRole('button', { name: 'Sign in' })"
+  results:
+    url: /search
+    elements:
+      result_list:
+        primary: ".results"        # no fallbacks: declared anywhere on this page
+
+tests:
+  login:
+    file: tests/login.spec.ts
+    intent: "Verify users can log in with valid credentials"
+    criticality: critical
+    pages_involved: [login]
+
+  checkout:
+    file: tests/checkout.spec.ts
+    criticality: high
+    pages_involved: [login]
+    # intent missing on purpose
+
+  profile:
+    file: tests/profile.spec.ts
+    intent: "Verify a user can update their display name"
+    pages_involved: [login]
+    # criticality missing on purpose
+
+  search:
+    file: tests/search.spec.ts
+    intent: "Verify search returns results for a known query"
+    criticality: medium
+    pages_involved: [results]      # results has no fallback chains
+
+  legacy_flow:
+    file: tests/legacy.spec.ts     # this file does not exist on disk
+    intent: "Verify the old onboarding wizard still completes"
+    criticality: low
+    pages_involved: [login]
