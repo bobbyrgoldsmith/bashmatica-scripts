@@ -24,7 +24,8 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [receipt-check](./receipt-check/) | Tier the supporting evidence for an AI procurement claim (vendor demo → our pilot) and gate irreversible decisions against the evidence quality | [#16](https://bashmatica.beehiiv.com/#) |
 | [env-drift](./env-drift/) | Compare an expected-key manifest against the actual environment and flag MISSING / EMPTY / EXTRA keys before an app boots into a silent failure | [#17](https://bashmatica.beehiiv.com/#) |
 | [gate-keeper](./gate-keeper/) | Refuse to ratify an agent-generated test as a passing gate until it clears an assertion-density floor, a state-manipulation scan, and an independent double-replay | [#18](https://bashmatica.beehiiv.com/#) |
-| [intent-lint](./intent-lint/) | Refuse an incomplete or out-of-sync test-intent manifest before a maintenance agent reads it: flag tests missing intent or criticality, tests with no reachable fallback selectors, and orphaned config/disk references | [#19](https://bashmatica.beehiiv.com/#) |
+| [failover-check](./failover-check/) | Refuse a single-homed LLM provider config: flag a missing primary, a fallback that shares the primary's vendor (no real failover), routed providers with no credentials path, unset api_key_env vars, and unrouted provider blocks | [#19](https://bashmatica.beehiiv.com/#) |
+| [intent-lint](./intent-lint/) | Refuse an incomplete or out-of-sync test-intent manifest before a maintenance agent reads it: flag tests missing intent or criticality, tests with no reachable fallback selectors, and orphaned config/disk references | [#20](https://bashmatica.beehiiv.com/#) |
 
 ## About Bashmatica!
 

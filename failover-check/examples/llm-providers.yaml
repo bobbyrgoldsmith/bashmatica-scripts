@@ -1,0 +1,23 @@
+# Example routing manifest — deliberately NOT CLEAN.
+#
+# The primary's only fallback is the SAME vendor on a different model, which is
+# the exact trap the Fable 5 shutdown exposed: a provider-level block takes the
+# API and Bedrock and every other channel that vendor runs, so a same-vendor
+# "fallback" goes down with the primary. Meanwhile a real cross-vendor provider
+# (openai) is configured and sitting right there, never wired into a route.
+
+routing:
+  primary: anthropic/claude-fable-5
+  fallbacks:
+    - anthropic/claude-opus-4-8   # same vendor as primary — not a real failover
+
+providers:
+  anthropic:
+    api_key_env: ANTHROPIC_API_KEY
+    models:
+      - claude-fable-5
+      - claude-opus-4-8
+  openai:
+    api_key_env: OPENAI_API_KEY
+    models:
+      - gpt-5

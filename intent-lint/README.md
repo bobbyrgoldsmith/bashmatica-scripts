@@ -72,5 +72,5 @@ complete. `--strict` turns both into refusals for CI.
 ## From the newsletter
 
 Companion script for
-[Bashmatica! Issue #19](https://bashmatica.beehiiv.com).
+[Bashmatica! Issue #20](https://bashmatica.beehiiv.com).
 Hand-raiser keyword: `INTENTLINT`.
