@@ -1,0 +1,15 @@
+# A sample pipeline, deliberately not clean, so samehand demonstrates every
+# verdict end to end. Format: pipe-delimited "step | proposer | ratifier".
+#
+# Seeded faults:
+#   - db_migration : the migrate-agent both proposes AND ratifies (SAME-HAND)
+#   - test_autofix : the fixer-agent grades its own fix (SAME-HAND)
+#   - send_campaign: no ratifier at all (INCOMPLETE)
+#
+# step             | proposer       | ratifier
+deploy_prod        | deploy-agent   | deterministic-gate
+db_migration       | migrate-agent  | migrate-agent
+refund_batch       | finance-agent  | human:controller
+test_autofix       | fixer-agent    | fixer-agent
+publish_post       | writer-agent   | editor-human
+send_campaign      | outreach-agent |
