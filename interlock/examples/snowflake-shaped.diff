@@ -1,0 +1,5 @@
+--- a/.github/workflows/triage.yml
++++ b/.github/workflows/triage.yml
+-        TITLE=$(sanitize_input "$ISSUE_TITLE")
+-        echo "New issue: $TITLE"
++        echo "New issue: ${{ github.event.issue.title }}"

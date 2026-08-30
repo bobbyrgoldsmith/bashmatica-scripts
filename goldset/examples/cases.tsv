@@ -1,0 +1,3 @@
+invoice-total	regex	^90\.00$	Extract only the grand total from: Subtotal 80.00, Tax 10.00, Total 90.00
+refund-policy	contains	30 days	What is our stated refund window? Answer from policy only.
+promo-applied	equals	72.00	Apply promo SAVE10 to a 80.00 order and give the final total.

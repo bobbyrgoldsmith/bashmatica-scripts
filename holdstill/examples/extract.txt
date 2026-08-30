@@ -1,0 +1,4 @@
+From the invoice below, return only the grand total as a number with two decimals.
+Subtotal 80.00
+Tax 10.00
+Total 90.00
