@@ -84,8 +84,8 @@ Outputs: `lag-sec`, `window-sec`, `slot-epoch` (also exported to `$GITHUB_ENV` a
 
 ## Related scripts in this repo
 
-- `fusebox` ([Issue #28](https://www.bashmatica.com/archive/028-every-autonomous-run-needs-a-fuse/), inline in the Quick Tip): the ceiling that trips an autonomous run
-- `interlock` ([Issue #29](https://www.bashmatica.com/archive/029-uncle-bob-stopped-reading-the-code/), inline in the Quick Tip): the gate that refuses a bot-authored diff on review alone
+- [`fusebox`](../fusebox/) (Issue #28): the ceiling that trips an autonomous run
+- [`interlock`](../interlock/) (Issue #29): the gate that refuses a bot-authored diff on review alone
 
 Both need a clock and a trust root that are not borrowed from the system they guard.
 
