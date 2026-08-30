@@ -26,6 +26,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [gate-keeper](./gate-keeper/) | Refuse to ratify an agent-generated test as a passing gate until it clears an assertion-density floor, a state-manipulation scan, and an independent double-replay | [#18](https://bashmatica.beehiiv.com/#) |
 | [failover-check](./failover-check/) | Refuse a single-homed LLM provider config: flag a missing primary, a fallback that shares the primary's vendor (no real failover), routed providers with no credentials path, unset api_key_env vars, and unrouted provider blocks | [#19](https://bashmatica.beehiiv.com/#) |
 | [intent-lint](./intent-lint/) | Refuse an incomplete or out-of-sync test-intent manifest before a maintenance agent reads it: flag tests missing intent or criticality, tests with no reachable fallback selectors, and orphaned config/disk references | [#20](https://bashmatica.beehiiv.com/#) |
+| [ci-clock](./ci-clock/) | Measure how late a scheduled GitHub Actions run fired; export the lag and slot epoch, or fail as LATE CRON, so scheduler lag is never reported as your outage. Ships as a composite action | [#30](https://bashmatica.beehiiv.com/p/030-my-dead-man-switch-ran-on-githubs-clock) |
 
 ## About Bashmatica!
 

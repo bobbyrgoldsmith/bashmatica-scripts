@@ -1,0 +1,44 @@
+name: ci-clock
+description: Measure how late a scheduled GitHub Actions run fired; fail on scheduler lag instead of blaming the pipeline.
+author: Bobby R. Goldsmith
+branding:
+  icon: clock
+  color: orange
+inputs:
+  slot:
+    description: The UTC cron slot this workflow is scheduled for, as HH:MM (e.g. "22:15").
+    required: true
+  window-sec:
+    description: Base window in seconds the downstream check uses (widened by the measured lag).
+    required: false
+    default: "10800"
+  max-lag:
+    description: Seconds of lag that fail the run with a LATE CRON error. 0 disables.
+    required: false
+    default: "0"
+  now:
+    description: Override the current epoch (testing only).
+    required: false
+    default: ""
+outputs:
+  lag-sec:
+    description: Seconds between the cron slot and the actual run start.
+    value: ${{ steps.clock.outputs.lag-sec }}
+  window-sec:
+    description: window-sec plus the measured lag.
+    value: ${{ steps.clock.outputs.window-sec }}
+  slot-epoch:
+    description: Unix epoch of the cron slot this run belongs to.
+    value: ${{ steps.clock.outputs.slot-epoch }}
+runs:
+  using: composite
+  steps:
+    - id: clock
+      shell: bash
+      env:
+        CI_CLOCK_WINDOW_SEC: ${{ inputs.window-sec }}
+        CI_CLOCK_MAX_LAG: ${{ inputs.max-lag }}
+        CI_CLOCK_NOW: ${{ inputs.now }}
+      run: |
+        if [ -z "$CI_CLOCK_NOW" ]; then unset CI_CLOCK_NOW; fi
+        "${{ github.action_path }}/ci-clock.sh" "${{ inputs.slot }}"

@@ -1,0 +1,34 @@
+# A dead-man check that cannot be tripped by GitHub's own scheduler lag.
+# Step one measures how late the cron actually fired; the check then asserts
+# "published after the send time on the slot's date" instead of "in the last
+# N hours", so an eight-hour lag reads as GitHub news, not as your outage.
+name: dead-man check
+on:
+  schedule:
+    - cron: '15 22 * * *'   # 22:15 UTC, 2h45m after a 19:30 UTC send
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Measure scheduler lag
+        id: clock
+        uses: bobbyrgoldsmith/bashmatica-scripts/ci-clock@master   # pin to a SHA in production
+        with:
+          slot: "22:15"
+          max-lag: "14400"        # more than four hours late: fail as LATE CRON, not as an outage
+      - name: Verify today's issue published after the send time
+        env:
+          SEND_TIME: "19:30"
+        run: |
+          set -euo pipefail
+          slot_epoch="${{ steps.clock.outputs.slot-epoch }}"
+          day=$(date -u -d "@$slot_epoch" +%Y-%m-%d)
+          send_epoch=$(date -u -d "$day $SEND_TIME:00" +%s)
+          # Replace with your platform's "latest published item" call.
+          published_epoch=$(./latest-publish-epoch.sh)
+          if [ "$published_epoch" -lt "$send_epoch" ]; then
+            echo "::error::Nothing published on $day after $SEND_TIME UTC."
+            exit 1
+          fi
+          echo "OK: published $(( published_epoch - send_epoch ))s after the send time on $day."
