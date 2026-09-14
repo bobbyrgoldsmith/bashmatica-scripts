@@ -36,6 +36,7 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [fusebox](./fusebox/) | Wrap an agent run in wall-clock, token and dollar ceilings; kill the process group and exit 1 when any fuse trips | [#28: Every Autonomous Run Needs a Fuse](https://www.bashmatica.com/archive/028-every-autonomous-run-needs-a-fuse/) |
 | [interlock](./interlock/) | Refuse a bot-authored PR unless the named checks passed and the diff removes no sanitizer and adds no raw `github.event` expansion inside a `run` block | [#29: Uncle Bob Stopped Reading the Code](https://www.bashmatica.com/archive/029-uncle-bob-stopped-reading-the-code/) |
 | [ci-clock](./ci-clock/) | Measure how late a scheduled GitHub Actions run fired; export the lag and slot epoch, or fail as LATE CRON, so scheduler lag is never reported as your outage. Ships as a composite action | [#30](https://bashmatica.beehiiv.com/p/030-my-dead-man-switch-ran-on-githubs-clock) |
+| [egress-fence](./egress-fence/) | Run a command as an unprivileged user whose outbound traffic is limited, in the kernel, to the hosts you name; everything else is logged, counted, and refused, and `--strict` fails the run on any refusal | [#32: The Grader Didn't Exist](https://www.bashmatica.com/archive/032-the-grader-didnt-exist/) |
 
 ## About Bashmatica!
 
