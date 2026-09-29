@@ -37,6 +37,8 @@ Demo scripts and code samples from the [Bashmatica! newsletter](https://bashmati
 | [interlock](./interlock/) | Refuse a bot-authored PR unless the named checks passed and the diff removes no sanitizer and adds no raw `github.event` expansion inside a `run` block | [#29: Uncle Bob Stopped Reading the Code](https://www.bashmatica.com/archive/029-uncle-bob-stopped-reading-the-code/) |
 | [ci-clock](./ci-clock/) | Measure how late a scheduled GitHub Actions run fired; export the lag and slot epoch, or fail as LATE CRON, so scheduler lag is never reported as your outage. Ships as a composite action | [#30](https://bashmatica.beehiiv.com/p/030-my-dead-man-switch-ran-on-githubs-clock) |
 | [egress-fence](./egress-fence/) | Run a command as an unprivileged user whose outbound traffic is limited, in the kernel, to the hosts you name; everything else is logged, counted, and refused, and `--strict` fails the run on any refusal | [#32: The Grader Didn't Exist](https://www.bashmatica.com/archive/032-the-grader-didnt-exist/) |
+| [mcp-pin](./mcp-pin/) | Pin an MCP server's tool manifest (names, descriptions, input schemas) into a lockfile the day you approve it; `check` exits 1 with a per-tool diff when it drifts | [#33: MCP Is the New Webhook](https://www.bashmatica.com/archive/033-mcp-is-the-new-webhook/) |
+| [mcp-guard](./mcp-guard/) | Stdio proxy between an MCP client and server that checks every `tools/list` answer against the `mcp-pin` lock and session-pins prompts; on drift the client gets an error and the server is killed | [#34: A Lock You Check Once Is a Receipt](https://www.bashmatica.com/archive/034-a-lock-you-check-once-is-a-receipt/) |
 
 ## About Bashmatica!
 
